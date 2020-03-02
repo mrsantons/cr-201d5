@@ -76,8 +76,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testArray = [2, 3, 4]; //eslint-disable-line
 function sumArray(sumArr) { //eslint-disable-line
-    var sumOne = sum(testArray[0], testArray[1]);
-    var sumTwo = sum(sumOne[0], testArray[2]);
+    var sumOne = sum(sumArr[0], sumArr[1]);
+    var sumTwo = sum(sumOne[0], sumArr[2]);
     return [sumTwo[0], "2,3,4 was passed in as an array of numbers, and 9 is their sum."]
 
 }
@@ -130,12 +130,12 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
-function multiplyAnyArray(testDynamicArray) { //eslint-disable-line
+function multiplyAnyArray(dynamicArray) { //eslint-disable-line
     var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
-    var arrayOne = multiply(testDynamicArray[0],testDynamicArray[1]);
-    var arrayTwo = multiply(arrayOne[0],testDynamicArray[2]);
-    var arrayThree = multiply(arrayTwo[0],testDynamicArray[3]);
-    var arrayFour = multiply(arrayThree[0],testDynamicArray[4]);
+    var arrayOne = multiply(dynamicArray[0],dynamicArray[1]);
+    var arrayTwo = multiply(arrayOne[0],dynamicArray[2]);
+    var arrayThree = multiply(arrayTwo[0],dynamicArray[3]);
+    var arrayFour = multiply(arrayThree[0],dynamicArray[4]);
  
     return [arrayFour[0], "The numbers 1,2,3,4,5 have a product of 120."]
 }
